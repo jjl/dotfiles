@@ -26,7 +26,7 @@ for P in * ; do
     setup.sh)
       continue;;
     # - scratch files
-    *\~|\#*\#)
+    *\~|\#*\#|*.swp)
       continue;;
   esac
    
