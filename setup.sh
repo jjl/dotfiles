@@ -3,6 +3,18 @@
 # This script is a modification of one i found on the internet
 # original: http://www.splitbrain.org/blog/2011-02/16-managing_dotfiles_with_dropbox
 
+# Currently, I only support linux and osx
+# Mostly because I don't have a solaris or BSD environment handy
+
+case "$(uname -s)" in
+  Linux|Darwin)
+    ;;
+  *)
+    echo "Unsupported OS: $OS"
+    exit 1
+    ;;
+esac
+
 cd `dirname $0`
 F=`pwd |sed -e "s#$HOME/\?##"`
  
