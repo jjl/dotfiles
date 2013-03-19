@@ -25,6 +25,9 @@ for P in * ; do
     # - this script
     setup.sh)
       continue;;
+    # - repository files
+    README|LICENSE)
+      continue;;
     # - scratch files
     *\~|\#*\#|*.swp)
       continue;;
